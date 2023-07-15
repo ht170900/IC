@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusivity Checker</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .highlighted {
+      border: 2px solid red;
+    }    
+    .error-container {
+      display: none;
+      color: red;
+      margin-top: 10px;
+    }
+    .warning-container {
+      display: none;
+      color: orange;
+      margin-top: 10px;
+    }
+    .solution-container {
+      display: none;
+      color: green;
+      margin-top: 10px;
+    }
+    .tag-container {
+      display: none;
+      color: blue;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inclusivity Checker</h1>
+    <form id="url-form">
+      <div class="form-group">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Check Accessibility</button>
+    </form>
+    <div id="disabilities" class="mt-4"></div>
+    <div id="violations" class="mt-4"></div>
+    <div id="console-container" class="mt-4"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src = "script.js">
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.3.3/axe.min.js"></script>
+</body>
+</html>
