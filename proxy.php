@@ -12,7 +12,6 @@ curl_close($ch);
 echo $response;
 
 
-// https://chat.openai.com/share/d9f3e0a8-0c7a-4828-80d1-85295deb9d18
-//https://chat.forefront.ai/share/7rgwjdzbl8vhepas
+
 ?>
 
